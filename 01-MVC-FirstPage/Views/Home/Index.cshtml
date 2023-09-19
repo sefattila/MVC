@@ -1,0 +1,61 @@
+﻿@using _01_MVC_FirstPage.Models;
+@model _01_MVC_FirstPage.Models.Movie;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Home Page</h1>
+<p style="font-weight:bold;color:red;">
+    The Movie:<i>@Model.Title</i> <br />
+    Release Date:<u>@Model.ReleaseDate</u>
+</p>
+<p>Merhaba Saat Şu Anda @DateTime.Now oldu</p>
+
+@{
+    string helloWorld = "<b>Merhaba Dunya</b>";
+    int sayi1 = 10;
+    <b>Sefa Attila</b>
+}
+<br />
+@if (DateTime.Now.Year >= 2023)
+{
+    <span>The Year is 2024</span>
+}
+else
+{
+    <span>The Year is 2023</span>
+}
+
+<hr />
+<p><b>Bilgi:@helloWorld</b></p>
+<p>HTML: @Html.Raw(helloWorld)</p>
+
+@{
+    List<string> names = new List<string>() { "Sefa", "Mehmet", "Fatih", "Kadir", "Hüseyin" };
+}
+
+<ul>
+    @{
+        for (int i = 0; i < names.Count; i++)
+        {
+            <li>@names[i]</li>
+        }
+    }
+</ul>
+
+<hr />
+
+@{
+    List<Movie> movies = new List<Movie>();
+    movies.Add(new Movie() { Id = 1, Title = "The GodFather", ReleaseDate = new DateTime(1972, 3, 24) });
+    movies.Add(new Movie() { Id = 2, Title = "Forrest Gump", ReleaseDate = new DateTime(1994, 3, 6) });
+    movies.Add(new Movie() { Id = 3, Title = "Fight Club", ReleaseDate = new DateTime(1999, 10, 15) });
+}
+
+<ul>
+    @foreach (var item in movies)
+    {
+        <li>@item.Id - @item.Title - @item.ReleaseDate</li>
+    }
+</ul>
