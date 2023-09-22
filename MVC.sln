@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-MVC-FirstPage", "01-MVC-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-MVC-Controller", "02-MVC-Controller\02-MVC-Controller.csproj", "{47DA1DE7-392A-4206-8A21-DD620AC1A45E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-MVC-Views", "03-MVC-Views\03-MVC-Views.csproj", "{1270017E-FE81-405A-8E15-D73463D74687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-MVC-Views", "03-MVC-Views\03-MVC-Views.csproj", "{1270017E-FE81-405A-8E15-D73463D74687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-MVC-TempData", "04-MVC-TempData\04-MVC-TempData.csproj", "{28FC855A-6015-47C3-9C5E-D195798B8FCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1270017E-FE81-405A-8E15-D73463D74687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1270017E-FE81-405A-8E15-D73463D74687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1270017E-FE81-405A-8E15-D73463D74687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FC855A-6015-47C3-9C5E-D195798B8FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FC855A-6015-47C3-9C5E-D195798B8FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FC855A-6015-47C3-9C5E-D195798B8FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FC855A-6015-47C3-9C5E-D195798B8FCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
