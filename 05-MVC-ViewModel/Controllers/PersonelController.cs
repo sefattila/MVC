@@ -39,7 +39,7 @@ namespace _05_MVC_ViewModel.Controllers
         public IActionResult Create(CreateVM createVM)
         {
             personels.Add(createVM.Personel);
-            return RedirectToAction("Index");
+            return View("Index", personels);
         }
     }
 }
