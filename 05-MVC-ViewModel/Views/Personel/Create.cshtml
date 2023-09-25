@@ -1,0 +1,60 @@
+﻿@using _05_MVC_ViewModel.Models.Enums;
+@model _05_MVC_ViewModel.Models.VMs.CreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Personel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Personel.Id" class="control-label"></label>
+                <input asp-for="Personel.Id" class="form-control" />
+                <span asp-validation-for="Personel.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personel.Name" class="control-label"></label>
+                <input asp-for="Personel.Name" class="form-control" />
+                <span asp-validation-for="Personel.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personel.BithDate" class="control-label"></label>
+                <input asp-for="Personel.BithDate" class="form-control" />
+                <span asp-validation-for="Personel.BithDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personel.Department" class="control-label"></label>
+                <select asp-for="Personel.Department" class="form-control" asp-items="@(new SelectList(Model.Departments,"Id","Name"))">
+                    @*@foreach (Department item in Model.Departments)
+                    {
+                        <option value="item.Id">@item.Name</option>
+                    }*@
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Personel.WorkingType" class="control-label"></label>
+                <select asp-for="Personel.WorkingType" class="form-control" asp-items="@Html.GetEnumSelectList<WorkingType>()">
+
+                </select>
+                <span asp-validation-for="Personel.WorkingType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
