@@ -34,5 +34,12 @@ namespace _05_MVC_ViewModel.Controllers
             vm.Departments= departments;
             return View(vm);
         }
+
+        [HttpPost]
+        public IActionResult Create(CreateVM createVM)
+        {
+            personels.Add(createVM.Personel);
+            return RedirectToAction("Index");
+        }
     }
 }
