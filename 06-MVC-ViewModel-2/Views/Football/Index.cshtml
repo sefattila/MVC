@@ -1,0 +1,45 @@
+﻿@model _06_MVC_ViewModel_2.Models.FootballPlayer
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Position.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team.Name)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.PositionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => modelItem.TeamId)
+            </td>
+        </tr>
+    </tbody>
+</table>
