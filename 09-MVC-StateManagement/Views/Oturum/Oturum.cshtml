@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Oturum";
+}
+
+<h1>Oturum</h1>
+
+<p>
+    @Context.Session.GetString("ad")
+</p>
+
+<p>
+    @if (Context.Session.GetString("rol") == "Yazılım")
+    {
+        <b>Sadece Kullanıcılar</b>
+    }
+</p>
+<div class="card">
+    <div class="card-header">
+        <h3>Oturum Bilgileri</h3>
+    </div>
+    <div class="card-body">
+        <b>Personel Ad</b> @ViewBag.prsAd
+        <br />
+        <b>Personel Mail</b> @ViewBag.prsMail
+        <br />
+        <b>Personel Yaş</b> @ViewBag.prsYas
+        <br />
+        <b>Personel Rol</b> @ViewBag.prsRol
+    </div>
+</di>
+
+
