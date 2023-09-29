@@ -1,0 +1,31 @@
+﻿@using _13_MVC_ETrade.Models.Entities;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Product>
+
+<div class="containe">
+    <div class="row">
+        @Html.Partial("_SliderPartialView")
+    </div>
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="img/@item.ProductImage" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text"><b>Fiyat</b> @item.Price</p>
+                    <p class="card-text"><b>Stok</b>@item.Stock</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+

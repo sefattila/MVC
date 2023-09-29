@@ -1,0 +1,13 @@
+﻿@using _13_MVC_ETrade.Models.VMs;
+@model ShoppingCartVM
+
+<div>
+    <h3>Alışveriş Sepetim</h3>
+    <ul>
+        @foreach (var item in Model.CartItems)
+        {
+            <li>@item.Name - @item.Price</li>
+        }
+        <p>Toplam: @Model.Price</p>
+    </ul>
+</div>
