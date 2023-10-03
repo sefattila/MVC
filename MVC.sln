@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-MVC-DependencyInjection"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13-MVC-ETrade", "13-MVC-ETrade\13-MVC-ETrade.csproj", "{ADE14A5D-AEA4-48FC-AECF-06F368C28385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-AsenkronProgramlama", "01-AsenkronProgramlama\01-AsenkronProgramlama.csproj", "{947A0EC3-4501-429C-BEFB-31AA1CA39FFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-AsenkronProgramlama", "01-AsenkronProgramlama\01-AsenkronProgramlama.csproj", "{947A0EC3-4501-429C-BEFB-31AA1CA39FFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Async-Task", "02-Task\02-Async-Task.csproj", "{19A74C93-8471-4D95-BF92-9053F3993057}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Async-Task", "02-Task\02-Async-Task.csproj", "{19A74C93-8471-4D95-BF92-9053F3993057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-MVC-Identity", "14-MVC-Identity\14-MVC-Identity.csproj", "{DDB6B5E4-B233-4B1A-A7CA-B02F9B44F6FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{19A74C93-8471-4D95-BF92-9053F3993057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A74C93-8471-4D95-BF92-9053F3993057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A74C93-8471-4D95-BF92-9053F3993057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB6B5E4-B233-4B1A-A7CA-B02F9B44F6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB6B5E4-B233-4B1A-A7CA-B02F9B44F6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB6B5E4-B233-4B1A-A7CA-B02F9B44F6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB6B5E4-B233-4B1A-A7CA-B02F9B44F6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
