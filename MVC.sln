@@ -37,17 +37,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14-MVC-Identity", "14-MVC-I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15-MVC-Role", "15-MVC-Role\15-MVC-Role.csproj", "{FA1E670F-66BE-4D64-8B20-1586607A592C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-API-Introduction", "16-API-Introduction\16-API-Introduction.csproj", "{B7983A02-FB2B-4837-A87D-D8876F3EFD12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16-API-Introduction", "16-API-Introduction\16-API-Introduction.csproj", "{B7983A02-FB2B-4837-A87D-D8876F3EFD12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api-NLayer-Entity", "Api-NLayer-Entity", "{64828F97-A327-499F-B88F-2C05FBD0F8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.Entities", "APIProject.Entities\APIProject.Entities.csproj", "{10A95D7E-2946-4686-9D95-B5FD7C1BFA54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Entities", "APIProject.Entities\APIProject.Entities.csproj", "{10A95D7E-2946-4686-9D95-B5FD7C1BFA54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.Repository", "APIProject.Repository\APIProject.Repository.csproj", "{04E8F0CF-2398-4443-B791-34AFF7DC2364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Repository", "APIProject.Repository\APIProject.Repository.csproj", "{04E8F0CF-2398-4443-B791-34AFF7DC2364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.BLL", "APIProject.BLL\APIProject.BLL.csproj", "{D1F2B9B4-787A-45BD-A7B7-7657D51671AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.BLL", "APIProject.BLL\APIProject.BLL.csproj", "{D1F2B9B4-787A-45BD-A7B7-7657D51671AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIProject.API", "APIProject.API\APIProject.API.csproj", "{176DD891-FDDB-41EB-BFA5-684BB1FDDE19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.API", "APIProject.API\APIProject.API.csproj", "{176DD891-FDDB-41EB-BFA5-684BB1FDDE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-API-JWT-Authentication", "17-API-JWT-Authentication\17-API-JWT-Authentication.csproj", "{EDD6120D-A199-4CA6-9CBF-564BDA5BCFB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{176DD891-FDDB-41EB-BFA5-684BB1FDDE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176DD891-FDDB-41EB-BFA5-684BB1FDDE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176DD891-FDDB-41EB-BFA5-684BB1FDDE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD6120D-A199-4CA6-9CBF-564BDA5BCFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD6120D-A199-4CA6-9CBF-564BDA5BCFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD6120D-A199-4CA6-9CBF-564BDA5BCFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD6120D-A199-4CA6-9CBF-564BDA5BCFB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

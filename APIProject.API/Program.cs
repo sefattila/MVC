@@ -1,3 +1,4 @@
+using APIProject.BLL;
 using APIProject.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +18,8 @@ namespace APIProject.API
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.AddTransient<EmployeeService>();
+            builder.Services.AddTransient<EmployeeRepo>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             var app = builder.Build();

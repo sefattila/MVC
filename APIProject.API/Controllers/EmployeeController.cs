@@ -34,9 +34,9 @@ namespace APIProject.API.Controllers
             else
             {
                 //book.GenreId = updateBook.GenreId != default ? updateBook.GenreId : book.GenreId;
-                employee.FirstName= employeeUpdate.FirstName != "string" ? employeeUpdate.FirstName:employee.FirstName;
-                employee.LastName = employeeUpdate.LastName != "string" ? employeeUpdate.LastName : employee.LastName;
-                employee.Departmant = employeeUpdate.Departmant != "string" ? employeeUpdate.Departmant : employee.Departmant;
+                employeeUpdate.FirstName= employeeUpdate.FirstName != "string" ? employeeUpdate.FirstName:employee.FirstName;
+                employeeUpdate.LastName = employeeUpdate.LastName != "string" ? employeeUpdate.LastName : employee.LastName;
+                employeeUpdate.Departmant = employeeUpdate.Departmant != "string" ? employeeUpdate.Departmant : employee.Departmant;
 
                 return Ok();
             }

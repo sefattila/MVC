@@ -19,16 +19,19 @@ namespace APIProject.Repository
         public void Create(Employee employee)
         {
             _context.Employees.Add(employee);
+            _context.SaveChanges();
         }
 
         public void Update(Employee employee)
         {
             _context.Employees.Remove(employee);
+            _context.SaveChanges();
         }
 
         public void Delete(Employee employee)
         {
             _context.Employees.Remove(employee);
+            _context.SaveChanges();
         }
 
         public IList<Employee> GetAll()
